@@ -62,4 +62,15 @@ class FizzbuzzTest extends \PHPUnit_Framework_TestCase
 //        $this->assertSame($exception, $fizzbuss->calc(15));
 //        $this->assertSame($exception, $fizzbuss->calc(30));
 //    }
+
+    /**
+     * @test
+     * @expectedException Exception
+     */
+    public function num1To100Ecception(){
+        $fizzbuss = new Fizzbuzz();
+        $num = 1;
+        $fizzbuss->calc($num);
+        //$fizzbuss->calc('test');
+    }
 }
