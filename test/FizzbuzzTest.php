@@ -19,6 +19,8 @@ class FizzbuzzTest extends \PHPUnit_Framework_TestCase
             [6,'Fizz'],
             [5,'Buzz'],
             [10,'Buzz'],
+            [15,'FizzBuzz'],
+            [30,'FizzBuzz'],
         ];
     }
 
@@ -50,14 +52,14 @@ class FizzbuzzTest extends \PHPUnit_Framework_TestCase
 //        $this->assertSame($exception, $fizzbuss->calc(5));
 //        $this->assertSame($exception, $fizzbuss->calc(10));
 //    }
-
-    /**
-     * @test
-     */
-    public function result3and5ToBuzz(){
-        $fizzbuss = new Fizzbuzz();
-        $exception = "FizzBuzz";
-        $this->assertSame($exception, $fizzbuss->calc(15));
-        $this->assertSame($exception, $fizzbuss->calc(30));
-    }
+//
+//    /**
+//     * @test
+//     */
+//    public function result3and5ToBuzz(){
+//        $fizzbuss = new Fizzbuzz();
+//        $exception = "FizzBuzz";
+//        $this->assertSame($exception, $fizzbuss->calc(15));
+//        $this->assertSame($exception, $fizzbuss->calc(30));
+//    }
 }
